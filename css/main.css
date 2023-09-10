@@ -314,8 +314,8 @@ a:hover {
 
 #bg {
     -moz-animation: bg 60s linear infinite;
-    -webkit-animation: bg 60s linear infinite;
-    -ms-animation: bg 60s linear infinite;
+/*     -webkit-animation: bg 0s linear infinite;
+    -ms-animation: bg 60s linear infinite; */
     animation: bg 60s linear infinite;
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -440,7 +440,7 @@ a:hover {
     }
 }
 
-#overlay {
+/* #overlay {
     -moz-animation: overlay 1.5s 1.5s forwards;
     -webkit-animation: overlay 1.5s 1.5s forwards;
     -ms-animation: overlay 1.5s 1.5s forwards;
@@ -457,7 +457,7 @@ a:hover {
     top: 0;
     width: 100%;
 }
-
+ */
 
 /* Main */
 
