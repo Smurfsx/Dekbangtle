@@ -314,9 +314,9 @@ a:hover {
 
 #bg {
     -moz-animation: bg 60s linear infinite;
-/*     -webkit-animation: bg 0s linear infinite;
-    -ms-animation: bg 60s linear infinite; */
-    animation: bg 60s linear infinite;
+    -webkit-animation: bg 0s linear infinite;
+    -ms-animation: bg 60s linear infinite;
+/*     animation: bg 60s linear infinite; */
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
