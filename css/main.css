@@ -313,10 +313,10 @@ a:hover {
 /* BG */
 
 #bg {
-/*     -moz-animation: bg 60s linear infinite;
+    /*     -moz-animation: bg 60s linear infinite;
     -webkit-animation: bg 0s linear infinite;
     -ms-animation: bg 60s linear infinite; */
-/*     animation: bg 60s linear infinite; */
+    /*     animation: bg 60s linear infinite; */
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -440,6 +440,7 @@ a:hover {
     }
 }
 
+
 /* #overlay {
     -moz-animation: overlay 1.5s 1.5s forwards;
     -webkit-animation: overlay 1.5s 1.5s forwards;
@@ -458,6 +459,7 @@ a:hover {
     width: 100%;
 }
  */
+
 
 /* Main */
 
@@ -927,6 +929,14 @@ a:hover {
     position: absolute;
     text-align: center;
     width: 100%;
+}
+
+#goToPage2Button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    /* Adjust as needed to control the distance from the bottom */
 }
 
 
