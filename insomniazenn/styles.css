@@ -1,0 +1,230 @@
+/* styles.css */
+
+
+/* styles.css */
+
+
+/* Import the Kanit font from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+/* Apply the Kanit font to specific elements */
+
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1.custom-font {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    /* Use the bold (700) weight for headers */
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    /* background-image: url('bg2.gif'); */
+    /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-color: #131a33;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ml13 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    position: absolute;
+    border-radius: 3vh;
+    width: 50vh;
+    height: 45vh;
+    margin-bottom: 20vh;
+    background-color: rgba(0, 0, 0, 0.30);
+    text-align: center;
+}
+
+.dancing-element {
+    /* width: 100px;
+    height: 100px; */
+    font-size: 350%;
+    color: white;
+    animation: dance 2s ease-in-out infinite;
+    /* Dancing animation */
+}
+
+@keyframes dance {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    25%,
+    75% {
+        transform: translateY(-20px);
+    }
+}
+
+.sliding-text {
+    font-size: 15px;
+    color: white;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    /* Sliding animation */
+}
+
+.rainbow-text {
+    font-size: 36px;
+    animation: rainbow 5s linear infinite;
+    /* Rainbow animation */
+    background-color: white;
+    /* Rainbow gradient */
+    -webkit-background-clip: text;
+    /* Apply gradient to text */
+    color: transparent;
+    /* Hide text content, but keep the gradient visible */
+    background-size: 200% 200%;
+    /* Background gradient size */
+    animation: rainbow 5s linear infinite;
+    animation: glow 1.5s ease-in-out infinite;
+    /* Glowing animation */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* Initial glow effect */
+}
+
+.Text2 {
+    font-size: 12px;
+    color: white;
+}
+
+.Text3 {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+.facebook-button {
+    color: white;
+    display: inline-block;
+    background-image: linear-gradient(to right top, #025aff, #005af5, #015bea, #085ae0, #125ad5, #2564d6, #356ed7, #4377d7, #5d8ee2, #77a4ec, #92bbf6, #aed1ff);
+    /* Facebook blue color */
+    color: white;
+    padding: 10px 20px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-button {
+    color: white;
+    display: inline-block;
+    background-image: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    /* Facebook blue color */
+    color: white;
+    padding: 10px 20px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#footer {
+    color: white;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 75%);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 75%);
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 75%);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 75%);
+    bottom: 0;
+    cursor: default;
+    height: 6em;
+    left: 0;
+    line-height: 8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.facebook-button:hover,
+.instagram-button:hover {
+    background-color: #e4405f;
+    /* Facebook red color for hover */
+}
+
+
+/* Style for Font Awesome icons */
+
+i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.centered-image {
+    border-radius: 100vh;
+    /* margin-bottom: 30vh; */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    max-height: 15vh;
+    /* Limit the image height if needed */
+}
+
+.blurred-image {
+    height: 116%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Limit the image height if needed */
+    filter: blur(5px);
+    /* Apply a blur effect to the image */
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 100%;
+        /* Start from the bottom */
+    }
+    100% {
+        background-position: 100% 0;
+        /* Move to the top */
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        /* Initial glow effect */
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
+        /* Increase glow */
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        /* Return to initial glow */
+    }
+}
