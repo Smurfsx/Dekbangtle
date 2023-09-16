@@ -1,6 +1,6 @@
 // script.js
 const textToSlide = document.getElementById('textToSlide');
-const textArray = ['Im not a programmer, but I like code 📜', 'Money is everything 💸', 'Rest in peace, see you in the next world "Pleng" 🤍🌷', 'I miss you fah 🤍'];
+const textArray = ['Im not a programmer, but I like code 📜', 'Money is everything 💸', 'Rest in peace, see you in the next world "Pleng" 🤍🌷', 'This kid who didn't finish school will earn hundreds of thousands of baht'];
 
 let currentIndex = 0;
 
